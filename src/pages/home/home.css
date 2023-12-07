@@ -1,0 +1,67 @@
+.btnTerminale{
+    background: #1f527d;
+    color: var(--colorWhite);
+}
+.btnPremiere{
+    background: #f59c27;
+    color: var(--colorWhite);
+}
+.btnSeconde{
+    background: #39b8b0;
+    color: var(--colorWhite);
+}
+.btnTroisieme{
+    background: #0e5c4b;
+    color: var(--colorWhite);
+}
+.btn_avis{
+    background: var(--colorRemark);
+    color: var(--colorWhite);
+}
+
+div iframe {
+    display: block;
+    margin-top: 20px ;
+}
+
+.niveauClasse {
+    display: flex;
+    justify-content: space-around;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerFocus {
+    width: 47%;
+}
+.containerNews {
+    width: 47%;
+}
+.description {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.description_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-top: 5px;
+}
+
+.desc_list{
+    background: blue;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    margin-top: 8px;
+    text-align: center;
+}
+
+.avis{
+    text-align: center;
+}
