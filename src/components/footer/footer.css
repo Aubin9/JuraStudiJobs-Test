@@ -7,4 +7,37 @@
     margin-top: 2rem;
     padding: 2rem 0;
     font-size: .9rem;
+    margin-top: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logo_media {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 2rem;
+    /* font-weight: 500; */
+    gap: 1.2rem;
+}
+
+.footer_row1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin-top: 10px;
+    align-self: stretch;
+}
+.column > a {
+    display: block;
+    /* width: fit-content;
+    align-content: center; */
 }

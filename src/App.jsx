@@ -8,6 +8,7 @@ import Etude from "./pages/etude/etude";
 import Connexion from "./pages/connexion/connexion";
 import Services from "./pages/services/services";
 import Offres from "./pages/offres/offres";
+import Research from "./pages/SearchBar/search"
 import Terminale from "./pages/Cours&Execices/Terminale/terminale"
 import Premiere from "./pages/Cours&Execices/Premiere/premiere"
 import Seconde from "./pages/Cours&Execices/Seconde/seconde"
@@ -25,6 +26,7 @@ function App() {
 				<Route path="/etude" element={<Etude />} />
 				<Route path="/connexion" element={<Connexion />}/>
 				<Route path="/offres" element={<Offres />}/>
+				<Route path="/results" element={<Research />}/>
 				<Route path="/cours&exercice/terminale" element={<Terminale />}/>
 				<Route path="/cours&exercice/premiere" element={<Premiere />}/>
 				<Route path="/cours&exercice/seconde" element={<Seconde />}/>

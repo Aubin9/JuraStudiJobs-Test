@@ -1,12 +1,17 @@
 import React from "react";
 import "./home.css"
-import { PiVideoDuotone } from "react-icons/pi";
-
+import Testimonials from "./testimonials/testimonials";
+import vid from "../.././components/assets/vid.svg"
+import student from "../.././components/assets/students.svg"
+import exercise from "../.././components/assets/exercise.svg"
+import discussion from "../.././components/assets/discussion.svg"
+import chapter from "../.././components/assets/chapters.svg"
+import level from "../.././components/assets/level.svg"
 
 const Home = () => {
 	return (
 		<div className="container">
-			<div className="container1">{/* container1 styles containerFocus and containerNews  */}
+			<div className="container1">
 			<div className="containerFocus"> 
 				<h1>Apprends les Maths et ma tiques en Ligne</h1>
 				<p>Mathématiques Simplifiées. Tes exercices, chapitres, et tes cours de maths à l'infini, des questions comme au contrôle, a l’examen, ou a l’evaluation le tout 100% en ligne. </p>
@@ -24,13 +29,13 @@ const Home = () => {
 						<button className="btn btnTroisieme">Troisieme</button>
 					</a>
 				</div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh?=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
 			</div>
 
-			<div className="containerNews">
-				<h1>Actualites sur le site</h1>
+			<div className="containerFocus">
+				<h1 className="">Actualites sur le site</h1>
 				<p>Nouvelle section, vous avez la possibilite de suivre vos progres sur le site <br /> vous avez desormais la possibilite de discuter avec des camarades sur le site</p>
-				<iframe width="500" height="500" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/t5gb14M6Df4?vq=hd1080&amp;controls=0"  title="la" frameborder="0" allowfullscreen></iframe>
 				<h2>Dernieres mises a jours</h2>
 				<p>la derniere mise a jours a ete fait le 6 Dec 2023, ce qui vous donne un plus large espace de travail et de travail en groupe</p>
 			</div>
@@ -46,47 +51,42 @@ const Home = () => {
 				</p>
 				<div className="description_items">
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>200+</h2>
-						<h5>Video detailles</h5>
+						<img src={vid} alt="videos" /> 
+						<span className="note_importante">200+</span>
+						<span className="note">Vidéo detaillés</span>
 					</div>
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>200+</h2>
-						<h5>Exercices et solutions</h5>
+						<img src={exercise} alt="exercices" /> 
+						<span className="note_importante">200+</span>
+						<span className="note">Exercices et solutions</span>
 					</div>
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>200+</h2>
-						<h5>Chapitres</h5>
+						<img src={chapter} alt="chapitres" /> 
+						<span className="note_importante">200+</span>
+						<span className="note">Chapitres</span>
 					</div>
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>6</h2>
-						<h5>Niveaux de classes</h5>
+						<img src={level} alt="niveau" /> 
+						<span className="note_importante">6</span>
+						<span className="note">Niveaux de classes</span>
 					</div>
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>1500+</h2>
-						<h5>Eleves</h5>
+						<img src={student} alt="eleves" /> 
+						<span className="note_importante">1500+</span>
+						<span className="note">Eleves</span>
 					</div>
 					<div className="desc_list">
-						<img src={PiVideoDuotone} alt="videos" style={{width: '200px', height: '200px'}}/>
-						<img src="../../assets/vid.svg" alt="" /> 
-						<h2>1</h2>
-						<h5>Espace de discussion</h5>
+						<img src={discussion} alt="discussion" /> 
+						<span className="note_importante">1</span>
+						<span className="note">Espace de discussion</span>
 					</div>
 				</div>
 			</div>
 
 			<div className="avis">
 				<h1>Avis de personnes</h1>
-				<a href="" >
+				<Testimonials/>
+				<a href="https://www.youtube.com/@MathsAvecAubin" target="_blank" rel="noreferrer">
 					<button className="btn btn_avis">Laisser un avis</button>
 				</a>
 			</div>
