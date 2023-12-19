@@ -9,6 +9,7 @@ export const Nav = styled.nav`
 	justify-content: flex-end;
 	padding: 0.2rem calc((100vw - 1000px) / 2);
 	z-index: 12;
+	// position:fixed;
 `;
 
 export const NavLink = styled(Link)`

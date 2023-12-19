@@ -1,8 +1,10 @@
 import React from 'react'
+// import 'bootstrap/dist/css/bootstrap.css';
+// import './testimonials.css'
 
 const Testimonials = () => {
   return (
-    <div>Here is the testimonials</div>
+		<h1>Voici la section de temoignages</h1>
   )
 }
 

@@ -31,13 +31,13 @@ body {
     --transition: all 400ms ease;
     --link:#778899; */
 }
-.container {
+.container0 {
     width: var(--containerWidth_lg);
     margin:auto;
     text-align: justify;
     background-color: var(--colorBg);
 }
-.btn{
+.btn0{
   width: max-content;
   display: inline-block;
   color: var(--colorPrimaryVariant);
@@ -50,7 +50,7 @@ body {
   border: none;
   margin-left: 10px;
 }
-.btn:hover{
+.btn0:hover{
   background: var(--colorPrimaryVariant);
   color:var(--colorPrimary);
   box-shadow: 0 0 5px var(--colorPrimaryVariant), 0 0 25px var(--colorPrimaryVariant), 0 0 50px var(--colorPrimaryVariant), 0 0 100px var(--colorPrimaryVariant), 0 0 200px var(--colorPrimaryVariant);

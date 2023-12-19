@@ -5,7 +5,7 @@ const Contact = () => {
 	return (
 		<div>
 			<h1>
-				Voici les differents services que nous proposons, vous 
+				Voici les differentes Ressources que nous proposons, vous 
 				pouvez nous contacter a l'adresse suivante:
 				peraucorps@gmail.com
 			</h1>

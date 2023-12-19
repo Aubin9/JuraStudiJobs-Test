@@ -10,30 +10,30 @@ import level from "../.././components/assets/level.svg"
 
 const Home = () => {
 	return (
-		<div className="container">
+		<div className="container0">
 			<div className="container1">
 			<div className="containerFocus"> 
 				<h1>Apprends les Maths et ma tiques en Ligne</h1>
 				<p>Mathématiques Simplifiées. Tes exercices, chapitres, et tes cours de maths à l'infini, des questions comme au contrôle, a l’examen, ou a l’evaluation le tout 100% en ligne. </p>
 				<div className="niveauClasse">
 					<a href="/cours&exercice/terminale">
-						<button className="btn btnTerminale" >Terminale</button>
+						<button className="btn0 btnTerminale" >Terminale</button>
 					</a>
 					<a href="/cours&exercice/premiere" >
-						<button className="btn btnPremiere">Premiere</button>
+						<button className="btn0 btnPremiere">Premiere</button>
 					</a>
 					<a href="/cours&exercice/seconde" >
-						<button className="btn btnSeconde">Seconde</button>
+						<button className="btn0 btnSeconde">Seconde</button>
 					</a>
 					<a href="/cours&exercice/troisieme" >
-						<button className="btn btnTroisieme">Troisieme</button>
+						<button className="btn0 btnTroisieme">Troisieme</button>
 					</a>
 				</div>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh?=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
 			</div>
 
 			<div className="containerFocus">
-				<h1 className="">Actualites sur le site</h1>
+				<h1>Actualites sur le site</h1>
 				<p>Nouvelle section, vous avez la possibilite de suivre vos progres sur le site <br /> vous avez desormais la possibilite de discuter avec des camarades sur le site</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/t5gb14M6Df4?vq=hd1080&amp;controls=0"  title="la" frameborder="0" allowfullscreen></iframe>
 				<h2>Dernieres mises a jours</h2>
@@ -41,7 +41,7 @@ const Home = () => {
 			</div>
 			</div>
 
-			<div className="description">
+			<div className="description0">
 				<h1>Description</h1>
 				<p>
 					Découvrez les mathématiques de manière ludique et accessible grâce à notre site web interactif. 
@@ -87,7 +87,7 @@ const Home = () => {
 				<h1>Avis de personnes</h1>
 				<Testimonials/>
 				<a href="https://www.youtube.com/@MathsAvecAubin" target="_blank" rel="noreferrer">
-					<button className="btn btn_avis">Laisser un avis</button>
+					<button className="btn0 btn_avis">Laisser un avis</button>
 				</a>
 			</div>
 		</div>

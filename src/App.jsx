@@ -6,7 +6,7 @@ import Home from "./pages/home";
 import About from "./pages/about/about";
 import Etude from "./pages/etude/etude";
 import Connexion from "./pages/connexion/connexion";
-import Services from "./pages/services/services";
+import Ressources from "./pages/services/services";
 import Offres from "./pages/offres/offres";
 import Research from "./pages/SearchBar/search"
 import Terminale from "./pages/Cours&Execices/Terminale/terminale"
@@ -22,7 +22,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
-				<Route path="/services" element={<Services />}/>
+				<Route path="/ressources" element={<Ressources />}/>
 				<Route path="/etude" element={<Etude />} />
 				<Route path="/connexion" element={<Connexion />}/>
 				<Route path="/offres" element={<Offres />}/>
