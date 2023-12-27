@@ -1,0 +1,43 @@
+.testimonial{
+  background: var(--colorBgVariant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+.swiper {
+  width: 95%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 20px 0 20px 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.avatar{
+  width:4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.2rem solid var(--colorPrimary);
+}
+.user_review{
+  color: var(--colorWhite);
+  font-weight: 300;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+.user_name{
+  color: var(--colorCyan);
+} 

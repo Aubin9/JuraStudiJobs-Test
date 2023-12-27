@@ -13,8 +13,10 @@ const Home = () => {
 		<div className="container0">
 			<div className="container1">
 			<div className="containerFocus"> 
-				<h1>Apprends les Maths et ma tiques en Ligne</h1>
-				<p>Mathématiques Simplifiées. Tes exercices, chapitres, et tes cours de maths à l'infini, des questions comme au contrôle, a l’examen, ou a l’evaluation le tout 100% en ligne. </p>
+				<div className="text_containerFocus">
+					<h1>Apprends les Maths et ma tiques en Ligne</h1>
+					<p>Mathématiques Simplifiées. Tes exercices, chapitres, et tes cours de maths à l'infini, des questions comme au contrôle, a l’examen, ou a l’evaluation le tout 100% en ligne. </p>
+				</div>
 				<div className="niveauClasse">
 					<a href="/cours&exercice/terminale">
 						<button className="btn0 btnTerminale" >Terminale</button>
@@ -30,13 +32,14 @@ const Home = () => {
 					</a>
 				</div>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh?=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+			{/* 560 315 */}
 			</div>
 
 			<div className="containerFocus">
-				<h1>Actualites sur le site</h1>
+				<h2>Actualites sur le site</h2>
 				<p>Nouvelle section, vous avez la possibilite de suivre vos progres sur le site <br /> vous avez desormais la possibilite de discuter avec des camarades sur le site</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/t5gb14M6Df4?vq=hd1080&amp;controls=0"  title="la" frameborder="0" allowfullscreen></iframe>
-				<h2>Dernieres mises a jours</h2>
+				<h3>Dernieres mises a jours</h3>
 				<p>la derniere mise a jours a ete fait le 6 Dec 2023, ce qui vous donne un plus large espace de travail et de travail en groupe</p>
 			</div>
 			</div>
@@ -84,7 +87,8 @@ const Home = () => {
 			</div>
 
 			<div className="avis">
-				<h1>Avis de personnes</h1>
+				<h1>Avis des utilisateurs</h1>
+      			<h2>Témoignages</h2>
 				<Testimonials/>
 				<a href="https://www.youtube.com/@MathsAvecAubin" target="_blank" rel="noreferrer">
 					<button className="btn0 btn_avis">Laisser un avis</button>

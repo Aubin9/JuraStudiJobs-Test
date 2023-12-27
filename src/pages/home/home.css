@@ -17,6 +17,7 @@
 .btn_avis{
     background: var(--colorRemark);
     color: var(--colorWhite);
+    margin-bottom: 10px;
 }
 
 div iframe {
@@ -27,27 +28,32 @@ div iframe {
 .niveauClasse {
     display: flex;
     /* justify-content: space-around; */
+    gap: 10px;
+    /* width: 95%; */
 }
 .container1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* background-color: black; */
 }
 
 .containerFocus {
     width:fit-content;
+    margin-top: 20px;
 }
 .description0 {
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    margin-top: 30px;
 }
 .description_items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     margin-top: 5px;
+    /* width: 95%; */
 }
 
 .desc_list{
@@ -62,6 +68,7 @@ div iframe {
 
 .avis{
     text-align: center;
+    margin-top: 50px;
 }
 .note_importante{
     display: block;
@@ -70,4 +77,7 @@ div iframe {
 }
 .note{
     font-size: 20px;
+}
+.text_containerFocus{
+    width: 90%;
 }
