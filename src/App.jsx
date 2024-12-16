@@ -1,40 +1,37 @@
-import React from 'react'
+import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer/footer";
-import {BrowserRouter as Router,Routes,Route,} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import About from "./pages/about/about";
-import Etude from "./pages/etude/etude";
-import Connexion from "./pages/connexion/connexion";
-import Ressources from "./pages/services/services";
-import Offres from "./pages/offres/offres";
-import Research from "./pages/SearchBar/search"
-import Terminale from "./pages/Cours&Execices/Terminale/terminale"
-import Premiere from "./pages/Cours&Execices/Premiere/premiere"
-import Seconde from "./pages/Cours&Execices/Seconde/seconde"
-import Troisieme from "./pages/Cours&Execices/Troisieme/troisieme"
-
+import About from "./pages/home/about";
+import Blogs from "./pages/home/blogs";
+import Connexion from "./pages/home/connexion";
+import JobAlert from "./pages/home/jobalert";
+import Research from "./pages/home/search";
+import CS from "./pages/JuraStudiJobs/CS";
+import Elec from "./pages/JuraStudiJobs/Electrical";
+import Mechanical from "./pages/JuraStudiJobs/Mechanical";
+import JobDetails from "./pages/home/jobDetails";
 
 function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/ressources" element={<Ressources />}/>
-				<Route path="/etude" element={<Etude />} />
-				<Route path="/connexion" element={<Connexion />}/>
-				<Route path="/offres" element={<Offres />}/>
-				<Route path="/results" element={<Research />}/>
-				<Route path="/cours&exercice/terminale" element={<Terminale />}/>
-				<Route path="/cours&exercice/premiere" element={<Premiere />}/>
-				<Route path="/cours&exercice/seconde" element={<Seconde />}/>
-				<Route path="/cours&exercice/troisieme" element={<Troisieme />}/>
-			</Routes>
-			<Footer/>
-		</Router>
-	);
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/job-alerts" element={<JobAlert />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/results" element={<Research />} />
+        <Route path="/Jurastudijobs/cs" element={<CS />} />
+        <Route path="/Jurastudijobs/elec" element={<Elec />} />
+        <Route path="/Jurastudijobs/mechanical" element={<Mechanical />} />
+        <Route path="/jobs/details/semester" element={<JobDetails />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;

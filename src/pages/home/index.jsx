@@ -1,101 +1,203 @@
 import React from "react";
-import "./home.css"
-import Testimonials from "./testimonials/testimonials";
-import vid from "../.././components/assets/vid.svg"
-import student from "../.././components/assets/students.svg"
-import exercise from "../.././components/assets/exercise.svg"
-import discussion from "../.././components/assets/discussion.svg"
-import chapter from "../.././components/assets/chapters.svg"
-import level from "../.././components/assets/level.svg"
+import Search from "./search";
+import { FaLocationDot, FaArrowRight } from "react-icons/fa6";
+import { IoMdBriefcase } from "react-icons/io";
+import briefcase from "../../components/assets/briefcase.png";
 
 const Home = () => {
-	return (
-		<div className="container0">
-			<div className="container1">
-			<div className="containerFocus"> 
-				<div className="text_containerFocus">
-					<h1>Apprends les Maths et ma tiques en Ligne</h1>
-					<p>Mathématiques Simplifiées. Tes exercices, chapitres, et tes cours de maths à l'infini, des questions comme au contrôle, a l’examen, ou a l’evaluation le tout 100% en ligne. </p>
-				</div>
-				<div className="niveauClasse">
-					<a href="/cours&exercice/terminale">
-						<button className="btn0 btnTerminale" >Terminale</button>
-					</a>
-					<a href="/cours&exercice/premiere" >
-						<button className="btn0 btnPremiere">Premiere</button>
-					</a>
-					<a href="/cours&exercice/seconde" >
-						<button className="btn0 btnSeconde">Seconde</button>
-					</a>
-					<a href="/cours&exercice/troisieme" >
-						<button className="btn0 btnTroisieme">Troisieme</button>
-					</a>
-				</div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/FeY2PspBunQ?si=Wa-GiEGPJg2HITXh?=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
-			{/* 560 315 */}
-			</div>
+  return (
+    <>
+      <section className="mx-5 my-5 mt-0">
+        <div className="hero text-center">
+          <h1 className="title text-light">
+            Hand picked curated jobs for law students in Germany
+          </h1>
+          <div className="search-bar mt-4 d-flex align-items-center position-relative">
+            <Search className="fas fa-search search-icon mx-2" />
+          </div>
+        </div>
+      </section>
 
-			<div className="containerFocus">
-				<h2>Actualites sur le site</h2>
-				<p>Nouvelle section, vous avez la possibilite de suivre vos progres sur le site <br /> vous avez desormais la possibilite de discuter avec des camarades sur le site</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/t5gb14M6Df4?vq=hd1080&amp;controls=0"  title="la" frameborder="0" allowfullscreen></iframe>
-				<h3>Dernieres mises a jours</h3>
-				<p>la derniere mise a jours a ete fait le 6 Dec 2023, ce qui vous donne un plus large espace de travail et de travail en groupe</p>
-			</div>
-			</div>
+      <section className="job-list mt-5">
+        <div className="job-card d-md-flex justify-content-between align-items-center">
+          <div className="job-company-infos d-md-flex align-items-center">
+            <div className="company-logo">
+              <div className="logo-text">
+                Werkstudent (m/w/d) im Bereich Jura{" "}
+              </div>
+            </div>
+            <div className="job-infos ms-md-5">
+              <h2 className="job-title">
+                Studentische Hilfskraft (m/w/d) gesucht
+              </h2>
+              <div className="tags mt-3">
+                <span className="tag homeoffice">
+                  <FaLocationDot /> Homeoffice
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="apply-semester d-flex align-items-center justify-content-between">
+            <div className="order-2 order-md-1">
+              <a href="/jobs/details/semester" className="apply-btn">
+                Apply
+                <FaArrowRight />
+              </a>
+            </div>
+            <div className="semester order-1 order-md-2">
+              <img
+                src={briefcase}
+                alt=""
+                className="fa-solid fa-calendar"
+                width={120}
+                height={120}
+              />
+              <span className="semester-text">SEMESTER</span>
+              <span className="semester-number">3+</span>
+            </div>
+          </div>
+        </div>
+        <div className="job-card d-md-flex justify-content-between align-items-center">
+          <div className="job-company-infos d-md-flex align-items-center">
+            <div className="company-logo">
+              <div className="logo-text">
+                Werkstudent (m/w/d) im Bereich Jura{" "}
+              </div>
+            </div>
+            <div className="job-infos ms-md-5">
+              <h2 className="job-title">
+                Studentische Hilfskraft (m/w/d) gesucht
+              </h2>
+              <div className="tags mt-3">
+                <span className="tag homeoffice">
+                  <FaLocationDot /> Homeoffice
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="apply-semester d-flex align-items-center justify-content-between">
+            <div className="order-2 order-md-1">
+              <a href="/jobs/details/semester" className="apply-btn">
+                Apply
+                <FaArrowRight />
+              </a>
+            </div>
+            <div className="semester order-1 order-md-2">
+              <img
+                src={briefcase}
+                alt=""
+                className="fa-solid fa-calendar"
+                width={120}
+                height={120}
+              />
+              <span className="semester-text">SEMESTER</span>
+              <span className="semester-number">2+</span>
+            </div>
+          </div>
+        </div>
+        <div className="job-card d-md-flex justify-content-between align-items-center">
+          <div className="job-company-infos d-md-flex align-items-center">
+            <div className="company-logo">
+              <div className="logo-text">
+                Werkstudent (m/w/d) im Bereich Jura{" "}
+              </div>
+            </div>
+            <div className="job-infos ms-md-5">
+              <h2 className="job-title">
+                Studentische Hilfskraft (m/w/d) gesucht
+              </h2>
+              <div className="tags mt-3">
+                <span className="tag homeoffice">
+                  <FaLocationDot /> Homeoffice
+                </span>
+                <span className="tag">
+                  {" "}
+                  <IoMdBriefcase className="fas fa-briefcase" />{" "}
+                  Vertragsklauseln{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="apply-semester d-flex align-items-center justify-content-between">
+            <div className="order-2 order-md-1">
+              <a href="/jobs/details/semester" className="apply-btn">
+                Apply
+                <FaArrowRight />
+              </a>
+            </div>
+            <div className="semester order-1 order-md-2">
+              <img
+                src={briefcase}
+                alt=""
+                className="fa-solid fa-calendar"
+                width={120}
+                height={120}
+              />
+              <span className="semester-text">SEMESTER</span>
+              <span className="semester-number">1+</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<div className="description0">
-				<h1>Description</h1>
-				<p>
-					Découvrez les mathématiques de manière ludique et accessible grâce à notre site web interactif. 
-					Que vous soyez débutant ou avancé, notre contenu pédagogique de qualité vous aidera à maîtriser les 
-					concepts mathématiques avec facilité. Ce qui est base sur les mesures suivantes: vidéos explicatives, 
-					des quiz interactifs ou des tutoriels
-				</p>
-				<div className="description_items">
-					<div className="desc_list">
-						<img src={vid} alt="videos" /> 
-						<span className="note_importante">200+</span>
-						<span className="note">Vidéo detaillés</span>
-					</div>
-					<div className="desc_list">
-						<img src={exercise} alt="exercices" /> 
-						<span className="note_importante">200+</span>
-						<span className="note">Exercices et solutions</span>
-					</div>
-					<div className="desc_list">
-						<img src={chapter} alt="chapitres" /> 
-						<span className="note_importante">200+</span>
-						<span className="note">Chapitres</span>
-					</div>
-					<div className="desc_list">
-						<img src={level} alt="niveau" /> 
-						<span className="note_importante">6</span>
-						<span className="note">Niveaux de classes</span>
-					</div>
-					<div className="desc_list">
-						<img src={student} alt="eleves" /> 
-						<span className="note_importante">1500+</span>
-						<span className="note">Eleves</span>
-					</div>
-					<div className="desc_list">
-						<img src={discussion} alt="discussion" /> 
-						<span className="note_importante">1</span>
-						<span className="note">Espace de discussion</span>
-					</div>
-				</div>
-			</div>
-
-			<div className="avis">
-				<h1>Avis des utilisateurs</h1>
-      			<h2>Témoignages</h2>
-				<Testimonials/>
-				<a href="https://www.youtube.com/@MathsAvecAubin" target="_blank" rel="noreferrer">
-					<button className="btn0 btn_avis">Laisser un avis</button>
-				</a>
-			</div>
-		</div>
-	);
+      <section className="mt-5 contact">
+        <div className="d-md-flex justify-content-between align-items-center">
+          <h1 className="text-light title">
+            Get new jura studentjobs sent to your inbox.
+          </h1>
+          <div className="contact-form">
+            <form action="" className="ng-untouched ng-pristine ng-valid">
+              <h2>Leave us Your Info </h2>
+              <div className="form-group mt-4 mt-lg-5">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  required
+                  className="form-control"
+                />
+              </div>
+              <div className="form-group mt-3">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  required
+                  className="form-control"
+                />
+              </div>
+              <button type="submit" className="btn btn-danger mt-4 mt-lg-5">
+                submit <FaArrowRight />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Home;
